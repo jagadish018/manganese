@@ -1,0 +1,4 @@
+.home-rooot{
+    display: flex;
+    flex-direction: column;
+}
