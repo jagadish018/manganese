@@ -1,24 +1,27 @@
 import { useNavigate } from "react-router";
 import "./Enterprice.css";
-import NavigationBar from "../../components/NavigationBar";
-
-
+import NavigationBar from "../../components/Navigation-bar/NavigationBar";
+import Container from "../../components/container/Container";
 
 const Enterprice = () => {
-    const navigate = useNavigate(); 
+  const navigate = useNavigate();
   return (
-    <div className="enterprice-root">
+    <>
       <NavigationBar />
-      <h1>Enterprice</h1>
-      <button
-        onClick={() => {
-          navigate("/");
-        }}
-      >
-        Go back to home
-      </button>
-    </div>
+      <Container>
+        <div className="enterprice-root">
+          <h1>Enterprice</h1>
+          <button
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            Go back to home
+          </button>
+        </div>
+      </Container>
+    </>
   );
-}
+};
 
-export default Enterprice
+export default Enterprice;

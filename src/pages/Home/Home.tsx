@@ -1,11 +1,22 @@
-import NavigationBar from "../../components/NavigationBar";
+import Container from "../../components/container/Container";
+import NavigationBar from "../../components/Navigation-bar/NavigationBar";
+import Bears from "./components/bears/Bears";
+
+
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="home-root">
+    <>
       <NavigationBar />
-    </div>
+      <Container>
+        <div className="home-root">
+          <Bears />
+          
+          
+        </div>
+      </Container>
+    </>
   );
 };
 

@@ -1,22 +1,28 @@
 import { useNavigate } from "react-router";
-import "./Pricing.css"
-import NavigationBar from "../../components/NavigationBar";
+import "./Pricing.css";
+import NavigationBar from "../../components/Navigation-bar/NavigationBar";
+import Container from "../../components/container/Container";
 
 const Pricing = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <div className="pricing-root">
+    <>
       <NavigationBar />
-      <h1>Pricing</h1>
-      <button
-        onClick={() => {
-          navigate("/");
-        }}
-      >
-        Go back to home
-      </button>
-    </div>
+    <Container>
+      <div className="pricing-root">
+        
+        <h1>Pricing</h1>
+        <button
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Go back to home
+        </button>
+      </div>
+    </Container>
+    </>
   );
-}
+};
 
-export default Pricing
+export default Pricing;
